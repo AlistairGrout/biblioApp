@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.iclu.bilbioapp.fragments.DetailsActivity">
+
+    <!-- TOOLBAR -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/detailsToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TopBarTitleTheme" />
+
+    <!--SCROLLVIEW AND DESCRIPTION -->
+    <ScrollView
+        android:id="@+id/details_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/detailsToolbar">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="12dp"
+            android:layout_below="@id/detailsToolbar">
+
+            <!-- LINEAR LAYOUT, TITLE, AUTHOR -->
+            <LinearLayout
+                android:id="@+id/details_linear_first"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/detailsToolbar">
+
+                <TextView
+                    android:id="@+id/detailsTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/blackColor"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/detailsAuthor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textColor="@color/blackColor"
+                    android:padding="2dp" />
+            </LinearLayout>
+
+            <!-- LINEAR LAYOUT, IMAGE VIEW -->
+            <LinearLayout
+                android:id="@+id/details_linear_second"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivDetailsThumbnail"
+                        android:layout_width="100dp"
+                        android:layout_height="150dp"
+                        android:contentDescription="@string/book_thumb_nail" />
+                </LinearLayout>
+
+                <!-- LINEAR LAYOUT, PUBLISHER, DATE, ISBN, CATEGORIES, PAGE COUNT -->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp">
+
+                    <TextView
+                        android:id="@+id/titlePublisher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_publisher"
+                        android:theme="@style/TextViewTitles" />
+
+                    <TextView
+                        android:id="@+id/detailsPublisher"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextViewContent"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:id="@+id/titlePublicationDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_publication_date"
+                        android:theme="@style/TextViewTitles" />
+
+                    <TextView
+                        android:id="@+id/detailsPublicationDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextViewContent"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:id="@+id/titleISBN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_isbn"
+                        android:theme="@style/TextViewTitles" />
+
+                    <TextView
+                        android:id="@+id/detailsISBN"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextViewContent"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:id="@+id/titleCategories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_categories"
+                        android:theme="@style/TextViewTitles" />
+
+                    <TextView
+                        android:id="@+id/detailsCategories"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextViewContent"
+                        android:layout_marginBottom="2dp" />
+
+                    <TextView
+                        android:id="@+id/titlePageCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/details_page_count"
+                        android:theme="@style/TextViewTitles" />
+
+                    <TextView
+                        android:id="@+id/detailsPageCount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/TextViewContent"
+                        android:layout_marginBottom="2dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- DESCRIPTION -->
+            <LinearLayout
+                android:id="@+id/details_linear_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_description"
+                    android:theme="@style/TextViewTitles"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:id="@+id/detailsDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/blackColor"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="16dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- FLOATING ACTION BUTTON -->
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_white_24dp"
+        app:fabSize="normal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp" />
+</RelativeLayout>

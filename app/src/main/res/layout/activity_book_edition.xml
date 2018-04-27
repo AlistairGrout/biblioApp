@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.iclu.bilbioapp.fragments.BookEditionActivity">
+
+    <!-- TOOLBAR AND APP TITLE -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/add_activity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/TopBarTitleTheme">
+
+        <TextView
+            android:id="@+id/app_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_book"
+            android:layout_gravity="left"
+            android:theme="@style/TopBarTitleTheme" />
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_activity_toolbar"
+        android:layout_above="@id/btn_save">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- TITLE AND AUTHOR -->
+            <LinearLayout
+                android:id="@+id/add_linear_first"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <EditText
+                    android:id="@+id/et_add_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_title" />
+
+                <EditText
+                    android:id="@+id/et_add_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_author" />
+
+            </LinearLayout>
+
+            <!-- THUMBNAIL VIEW-->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <LinearLayout
+                    android:id="@+id/add_linear_second"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+                    <ImageView
+                        android:id="@+id/et_image_view_thumb"
+                        android:layout_width="60dp"
+                        android:layout_height="90dp" />
+
+                </LinearLayout>
+
+                <!-- THUMBNAIL AND PAGE COUNT -->
+                <LinearLayout
+                    android:id="@+id/add_linear_third"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/et_add_thumbnail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/input_thumbnail" />
+
+                    <EditText
+                        android:id="@+id/et_page_count"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:hint="@string/input_page_count" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- PUBLISHER, DATE, ISBN, CATEGORIES -->
+            <LinearLayout
+                android:id="@+id/add_linear_fourth"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <EditText
+                    android:id="@+id/et_publisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_publish" />
+
+                <EditText
+                    android:id="@+id/et_add_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_year" />
+
+                <EditText
+                    android:id="@+id/et_isbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_isbn" />
+
+                <EditText
+                    android:id="@+id/et_categories"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_categories" />
+
+                <EditText
+                    android:id="@+id/et_descriptions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/input_description" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- BTN SAVE -->
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_save"
+        android:theme="@style/ButtonStyleFont"
+        android:textColor="@color/whiteColor"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

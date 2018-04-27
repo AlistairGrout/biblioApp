@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "558315051106",
+    "firebase_url": "https://biblio-68ae3.firebaseio.com",
+    "project_id": "biblio-68ae3",
+    "storage_bucket": "biblio-68ae3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:558315051106:android:e6d5f3cc0ee97581",
+        "android_client_info": {
+          "package_name": "com.example.iclu.biblioapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "558315051106-fug58p0lfg2e6mgdl0q8ud8dggvareg4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iclu.biblioapp",
+            "certificate_hash": "814cd72fb817148c16ad9b873bad4ac2a6ea0258"
+          }
+        },
+        {
+          "client_id": "558315051106-qlu47tais58brmgg5qm3vcp7s7udmteb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFlPUp0ThX0JDEqbzEXYWM0QQrGzrXoO8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "558315051106-qlu47tais58brmgg5qm3vcp7s7udmteb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

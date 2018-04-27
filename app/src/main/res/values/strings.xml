@@ -1,0 +1,80 @@
+<resources>
+
+    <!-- GENERAL APP INFOS -->
+    <string name="app_name">Bibl.io</string>
+    <string name="title_bibl">bibl</string>
+    <string name="title_io">.io</string>
+
+    <!-- LOGIN -->
+    <string name="login_email_address">email address</string>
+    <string name="login_email_password">password</string>
+    <string name="login_button_register">Register</string>
+    <string name="login_button_login">Login</string>
+
+    <string name="login_toast_success">Welcome!</string>
+    <string name="login_error_authentication">Authentication failed</string>
+    <string name="login_error_empty_spaces">Please fill in the spaces</string>
+    <string name="login_error_regex">Invalid email address, please try again</string>
+    <string name="tv_email">email address</string>
+    <string name="tv_password">password</string>
+
+    <!-- EXCEPTIONS -->
+    <string name="fb_weak_password">Password not strong enough, should be 6-characters long minimum</string>
+    <string name="fb_invalid_credentials">Invalid credentials, please verify your email and/or password</string>
+    <string name="fb_collisions_exception">This email is already in use.</string>
+    <string name="fb_invalid_user">Invalid email, please try again</string>
+
+    <!-- BOTTOM NAV BAR -->
+    <string name="text_books">We couldn\'t find any book on the shelves. Let\'s add one!</string>
+    <string name="text_users">We couldn\'t find users. Let\'s register some!</string>
+    <string name="text_rentals">We couldn\'t find any running rental. Let\'s rent things!</string>
+    <string name="action_books">Books</string>
+    <string name="action_users">Users</string>
+    <string name="actions_rentals">Rentals</string>
+    <string name="quit_message">Are you sure you want to quit?</string>
+    <string name="quit_yes">Yes</string>
+    <string name="quit_no">No</string>
+    <string name="data_loaded">The books were loaded</string>
+
+    <!-- ADD BOOK -->
+    <string name="input_author">authors</string>
+    <string name="input_title">title</string>
+    <string name="input_thumbnail">thumbnail url</string>
+    <string name="input_page_count">page count</string>
+    <string name="input_publish">publisher</string>
+    <string name="input_year">publication date (ie: 2016-08-31)</string>
+    <string name="input_isbn">ISBN 13</string>
+    <string name="input_categories">categories</string>
+    <string name="btn_save">Save</string>
+    <string name="add_book">Add book</string>
+    <string name="edit_book">Edit book</string>
+    <string name="fill_spaces">Please fill in the spaces</string>
+    <string name="empty_author">You need to give an author\'s name!</string>
+    <string name="input_description">description</string>
+    <string name="details_publisher">publisher</string>
+    <string name="details_publication_date">publication date</string>
+    <string name="details_isbn">ISBN</string>
+    <string name="details_categories">categories</string>
+    <string name="details_page_count">page count</string>
+    <string name="details_description">description</string>
+    <string name="action_delete">delete</string>
+    <string name="action_edit">edit</string>
+    <string name="book_thumb_nail">book thumbnail</string>
+    <string name="confirm_deletion">Confirm deletion?</string>
+    <string name="text_deletion">Book will be permanently deleted.</string>
+    <string name="deletion_cancel">cancel</string>
+    <string name="deletion_confirm">confirm</string>
+    <string name="action_search">search</string>
+    <string name="search_book">Search a book</string>
+    <string name="btn_search_txt">Search</string>
+    <string name="tv_do_it">Let\'s do it!</string>
+    <string name="action_search_feature">search</string>
+    <string name="tv_close">close</string>
+    <string name="tv_search_title">title</string>
+    <string name="tv_search_author">author</string>
+    <string name="tv_search_ISBN">ISBN</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

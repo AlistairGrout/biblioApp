@@ -1,0 +1,105 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- TITLE THEME -->
+    <style name="TitleTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/merriweather_bolditalic</item>
+        <item name="android:textSize">110dp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <!-- TOPBAR TITLE THEME -->
+    <style name="TopBarTitleTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/merriweather_italic</item>
+        <item name="android:textSize">26dp</item>
+        <item name="android:textColor">@color/whiteColor</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
+    <!-- INPUT EDIT TEXT -->
+    <style name="InputEditTextTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">20dp</item>
+        <item name="colorControlNormal">@color/whiteColor</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
+        <item name="colorControlHighlight">@color/whiteColor</item>
+        <item name="android:editTextColor">@color/whiteColor</item>
+    </style>
+
+    <!-- INPUT HINT TEXT -->
+    <style name="InputTextHint" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20dp</item>
+        <item name="colorControlNormal">@color/whiteColor</item>
+        <item name="colorControlActivated">@color/whiteColor</item>
+        <item name="colorControlHighlight">@color/whiteColor</item>
+        <item name="android:textColorHint">@color/whiteColor</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+    </style>
+
+    <!-- BUTTON STYLE -->
+    <style name="ButtonStyleFont" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!-- BOTTOM NAV -->
+    <style name="BottomNavTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:state_pressed">true</item>
+        <item name="itemIconTint">@color/colorPrimary</item>
+        <item name="itemTextColor">@color/colorPrimary</item>
+    </style>
+
+    <!-- EMPTY FRAGMENT TEXT -->
+    <style name="EmptyTextFragment" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">20dp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <!-- BOOKS -->
+    <style name="TitleBooksInfoTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">@color/blackColor</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <style name="InfosBooksTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">14dp</item>
+        <item name="android:fontFamily">@font/montserrat_medium</item>
+    </style>
+
+    <!-- DETAILS ACTIVITY -->
+    <style name="TextViewTitles" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">13dp</item>
+        <item name="android:fontFamily">@font/montserrat_light</item>
+    </style>
+
+    <style name="TextViewContent" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">15dp</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="IconStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:icon">@color/whiteColor</item>
+    </style>
+
+    <!-- TEXT VIEW SEARCH BOOK -->
+    <style name="TextViewStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">22dp</item>
+        <item name="android:fontFamily">@font/montserrat_regular</item>
+    </style>
+
+    <style name="SearchViewStyle" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textSize">12dp</item>
+        <item name="android:fontFamily">@font/montserrat_light</item>
+    </style>
+
+</resources>
