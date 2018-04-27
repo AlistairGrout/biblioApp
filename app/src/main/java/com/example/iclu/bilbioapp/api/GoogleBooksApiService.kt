@@ -8,6 +8,6 @@ interface GoogleBooksApiService {
     @GET("/volumes/")
     fun getBooks(
             @Query("q") request: String,
-            @Query("key") key: String = ""
+            @Query("key") key: String = "" //Add the key when working on it
     ): Call<GoogleBooksResult>
 }
